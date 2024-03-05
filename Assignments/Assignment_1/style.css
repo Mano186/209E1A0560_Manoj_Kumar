@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barriecito&family=Caveat:wght@400..700&family=Gabarito:wght@400..900&family=Protest+Revolution&display=swap');
+
+
+body {
+    background-color: #f0e6ef;
+    margin: 7px; 
+   
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+/* Navigation Bar */
+.nav {
+    background-color: #2b2d32;
+    padding: 25px; 
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.nav .logo p {
+    margin: 0;
+    font-size: 25px;
+    color: #ffffff;
+    font-family: "Kode Mono", monospace;
+}
+
+.nav .navbar {
+    display: flex;
+}
+
+.nav .navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 0 13px;
+    font-family: "Space Grotesk", sans-serif;
+}
+.navbar a:hover {
+    background-color: #f0e6ef;
+    color: rgb(30, 40, 49);
+    border-radius: 6px;
+    transition: none;
+    padding: 3px;
+}
+/* coverpage */
+.coverpage{
+    height: 100vh;
+    background-image:url(images/model1.png);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 7px;
+    border-radius: 15px;
+    box-sizing: border-box; 
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.coverpage #mainText{
+    position: absolute;
+    top: 100px; 
+    right: 300px;
+    color: rgb(55, 55, 55); 
+    font-size: 60px;
+    padding: 5px;
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.coverpage #subText{
+    position: absolute;
+    top: 300px; 
+    right: 310px;
+    color: rgb(55, 55, 55); 
+    font-size: 25px;
+    padding: 5px;
+    font-family: "Gabarito", sans-serif;
+}
+.coverpage button{
+    position: absolute;
+    top: 380px; 
+    right: 310px;
+}
+.btn1{
+    background-color: rgb(55, 55, 55);
+    color: #f0e6ef;
+    border-radius: 12px;
+    padding: 10px;
+    font-family: "Gabarito", sans-serif;
+    font-size: 15px;
+}
+/* Collections */
+.collections{
+    margin-top: 10px;
+}
+.text{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 20px;
+  }
+.card-container{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+    background-color: #ffffff;
+    
+  }
+  
+  .card:hover{
+    font-size: 30px;
+    transform: scale(1.1);
+  }
+  
+  .card img {
+    
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  
+  .card-text {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .card-text h2 {
+    margin-bottom: 10px;
+  }
+  
+  .card-text p {
+    font-size: 20px;
+    color: #363636;
+  }
+ 
+ 
+ .button-card:hover{
+    font-size: 30px;
+    background-color: transparent;
+    transition-duration: 2s;
+ }
+ /* offer */
+ .offers img{
+    width: 1500px;
+    padding-left: 10px;
+    margin-top: 20px;
+ }
+ /* categories */
+ .categories .categoryHead{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: 600;
+    text-align: center;
+ }
+.category{
+    display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+  .cardchild {
+  padding: 10px;
+  padding-left: 0;
+}
+
+.cardchild img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* footer */
+footer{
+    background-color: #2b2d32;
+    margin: 0;
+    height: 55vh;
+    color: #f0e6ef;
+}
+footer .copyright{
+    text-align: center;
+    padding: 20px;
+}
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+ 
+  .footer-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    
+  }
+  .links{
+    position: absolute;
+    right:330px;
+  }
+
+  .subtitle {
+    text-align: left;
+    margin: 0 70px; 
+    display: inline-block; 
+  }
+
+  .subtitle p {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .subtitle a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    font-size: 18px;
+  }
+  .signup{
+    padding: 15px;
+  }
+  .signup p {
+    font-weight: bold;
+    padding-top: 17px;
+    font-size: 20px;
+  }
+
+  .signup input {
+    margin-top: 5px;
+    padding: 7px;
+  }
+
+  .signup button {
+    margin-top: 5px;
+    padding: 8px;
+    background-color: #2f48d3;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+.copy{
+    text-align: center
+}
+
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 768px) {
+  body {
+      margin: 0; /* Resetting margin for the body */
+  }
+
+  .nav {
+      padding: 15px;
+  }
+
+  .nav .logo p {
+      font-size: 20px;
+  }
+
+  .nav .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .nav .navbar a {
+      margin: 5px 0;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+  }
+
+  .coverpage #mainText,
+  .coverpage #subText,
+  .coverpage button {
+      position: static;
+      text-align: center;
+      margin: 20px;
+  }
+
+  .collections .text {
+      font-size: 30px;
+  }
+
+  .card {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  .offers img {
+      width: 100%;
+  }
+
+  .categories .categoryHead {
+      font-size: 30px;
+  }
+
+  .category {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subtitle {
+      margin: 0;
+  }
+
+  .subtitle p,
+  .subtitle a {
+      margin: 5px 0;
+  }
+
+  .copy {
+      padding: 10px;
+  }
+  footer{
+    align-items: center;
+    height:120vh;
+  }
+  .footer-links{
+    align-items: center;
+  }
+}
